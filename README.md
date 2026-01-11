@@ -15,11 +15,11 @@ mv ~/.config/nvim ~/.config/nvim.bak
 
 2. Clone This Repository:
 ```sh
-git clone https://github.com/msmith-codes/neovimrc.git ~/.config/nvim
+git clone https://github.com/msmith-codes/turbo-vim.git ~/.config/nvim
 ```
 or Windows Powershell
 ```batch
-git clone https://github.com/msmith-codes/neovimrc.git $ENV:USERPROFILE\AppData\Local\nvim
+git clone https://github.com/msmith-codes/turbo-vim.git $ENV:USERPROFILE\AppData\Local\nvim
 ```
 
 3. Launch Neovim:
