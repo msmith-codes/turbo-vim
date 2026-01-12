@@ -21,6 +21,7 @@ local plugins = {
     require("turbo-vim.plugins.lspconfig"),
     require("turbo-vim.plugins.treesitter"),
     require("turbo-vim.plugins.neotree"),
+    require("turbo-vim.plugins.toggleterm"),
     require("turbo-vim.plugins.telescope"),
 }
 local opts = {}
@@ -31,3 +32,4 @@ require("lazy").setup(plugins, opts)
 require("turbo-vim.after.colortheme")
 require("turbo-vim.after.neotree")
 require("turbo-vim.after.telescope")
+require("turbo-vim.after.toggleterm")
