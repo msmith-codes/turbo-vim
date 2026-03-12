@@ -17,12 +17,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+    require("turbo-vim.plugins.bufferline"),
     require("turbo-vim.plugins.gruvbox"),
     require("turbo-vim.plugins.lspconfig"),
     require("turbo-vim.plugins.treesitter"),
-    require("turbo-vim.plugins.neotree"),
     require("turbo-vim.plugins.toggleterm"),
     require("turbo-vim.plugins.telescope"),
+    require("turbo-vim.plugins.snacks"),
+    require("turbo-vim.plugins.sidekick"),
 }
 local opts = {}
 
@@ -30,6 +32,6 @@ require("lazy").setup(plugins, opts)
 
 -- [[ AFTER ]] --
 require("turbo-vim.after.colortheme")
-require("turbo-vim.after.neotree")
 require("turbo-vim.after.telescope")
 require("turbo-vim.after.toggleterm")
+require("turbo-vim.after.bufferline")
