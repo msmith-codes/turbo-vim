@@ -21,6 +21,7 @@ local plugins = {
     require("turbo-vim.plugins.gruvbox"),
     require("turbo-vim.plugins.lspconfig"),
     require("turbo-vim.plugins.nvim-cmp"),
+    require("turbo-vim.plugins.autopairs"),
     require("turbo-vim.plugins.treesitter"),
     require("turbo-vim.plugins.toggleterm"),
     require("turbo-vim.plugins.telescope"),
