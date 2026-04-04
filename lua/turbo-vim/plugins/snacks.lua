@@ -7,7 +7,8 @@ return {
     bigfile = { enabled = true },
     dashboard = { enabled = true },
     explorer = {
-      enabled = true
+      enabled = true,
+      auto_close = false
     },
     indent = { enabled = true },
     input = { enabled = true },
@@ -26,5 +27,16 @@ return {
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
+    terminal = {
+      enabled = true,
+      win = {
+        keys = {
+          nav_close = "<C-\\>",
+        },
+      },
+    },
+  },
+  keys = {
+    { "<C-\\>", function() Snacks.terminal() end, desc = "Toggle Terminal" },
   },
 }

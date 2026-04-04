@@ -23,7 +23,6 @@ local plugins = {
     require("turbo-vim.plugins.nvim-cmp"),
     require("turbo-vim.plugins.autopairs"),
     require("turbo-vim.plugins.treesitter"),
-    require("turbo-vim.plugins.toggleterm"),
     require("turbo-vim.plugins.telescope"),
     require("turbo-vim.plugins.snacks"),
     require("turbo-vim.plugins.sidekick"),
@@ -35,5 +34,4 @@ require("lazy").setup(plugins, opts)
 -- [[ AFTER ]] --
 require("turbo-vim.after.colortheme")
 require("turbo-vim.after.telescope")
-require("turbo-vim.after.toggleterm")
 require("turbo-vim.after.bufferline")
