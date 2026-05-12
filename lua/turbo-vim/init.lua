@@ -13,5 +13,3 @@ vim.opt.softtabstop = config.editor.tab_size
 vim.opt.expandtab = true
 
 require("turbo-vim.lazy")
-
-vim.keymap.set("n", config.filetree.jump_to, "<C-w>h", { noremap = true, silent = true })

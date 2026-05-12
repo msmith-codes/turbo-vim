@@ -10,8 +10,7 @@ return {
         tab_size = 4,
     },
     neotree = {
-        position = "left",
-        width = 32,
+        position = "current",
     },
     filetree = {
         jump_to = "<C-h>",

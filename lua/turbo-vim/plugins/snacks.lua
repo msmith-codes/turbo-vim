@@ -7,7 +7,6 @@ return {
     dashboard = { enabled = true },
     explorer = {
       enabled = true,
-      auto_close = false
     },
     indent = { enabled = true },
     input = { enabled = true },
@@ -17,6 +16,11 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
+          auto_close = true,
+          layout = {
+            preset = "default",
+            fullscreen = true,
+          },
         },
       },
     },
@@ -38,5 +42,6 @@ return {
   keys = {
     { "<C-\\>", function() Snacks.terminal() end, desc = "Toggle Terminal" },
     { "<C-\\>", function() Snacks.terminal() end, mode = "t", desc = "Toggle Terminal" },
+    { "<leader>t", function() Snacks.explorer() end, desc = "Toggle Explorer" },
   },
 }
