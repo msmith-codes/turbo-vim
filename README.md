@@ -1,11 +1,11 @@
 # Turbo Vim 
-Yet Another NeoVim distro, but light weight.
+Yet Another neovim distro, but light weight and easy to customize.
 
-## 🛠️  Installation
+## 🛠️ Installation
 ### Prerequisites
-* **Neovim:** Ensure you have Neovim version 0.10 or higher installed.
+* **Neovim:** Ensure you have Neovim version 0.12 or higher installed.
 * **Git:** Required for cloning the repository and managing plugins.
-> **Note:** This guide assumes you are using Linux or macOS. If you are using Windows, I'd recommend installing WSL2. 
+* **Ripgrep:** Required for livegrep to work.
 
 ### Steps
 1. Backup Existing Configuration (If Exists):
@@ -17,12 +17,29 @@ mv ~/.config/nvim ~/.config/nvim.bak
 ```sh
 git clone https://github.com/msmith-codes/turbo-vim.git ~/.config/nvim
 ```
-or Windows Powershell
-```batch
+Windows Powershell
+```powershell
 git clone https://github.com/msmith-codes/turbo-vim.git $ENV:USERPROFILE\AppData\Local\nvim
 ```
 
 3. Launch Neovim:
 ```sh
 nvim
+```
+
+### Other Notes
+
+#### cmake-language-server
+If cmake-language-server is not installed you will get an error, this can safely be ignored.
+If the error bothers you, you can install cmake-language-server by doing the following:
+
+**Arch Linux**
+```sh
+sudo pacman -S python-pipx
+pipx install git+https://github.com/regen100/cmake-language-server.git@refs/pull/104/head
+```
+
+**Fedora**
+```sh
+pip install git+https://github.com/regen100/cmake-language-server.git@refs/pull/104/head
 ```
