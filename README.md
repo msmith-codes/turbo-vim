@@ -27,6 +27,9 @@ git clone https://github.com/msmith-codes/turbo-vim.git $ENV:USERPROFILE\AppData
 nvim
 ```
 
+### Configuration
+All configuration is done using the `~/.config/nvim/lua/config.lua` file.  
+
 ### Other Notes
 
 #### cmake-language-server

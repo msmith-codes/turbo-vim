@@ -1,7 +1,7 @@
 return {
     theme = {
-        style = "catppuccin",
-        mode = "dark",
+        style = "catppuccin", -- [catppuccin, gruvbox]
+        mode = "dark", -- [dark, light]
     },
     editor = {
         line_numbers = true,
@@ -12,7 +12,7 @@ return {
     filetree = {
         jump_to = "<C-h>",
         toggle = "<C-n>",
-        position = "left",
+        position = "left", -- [left right]
         fullscreen = false,
         width = 24,
     },
