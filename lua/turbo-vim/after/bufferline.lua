@@ -1,3 +1,5 @@
+local config = require("config")
+
 vim.opt.termguicolors = true
 
 require("bufferline").setup({
@@ -30,5 +32,5 @@ local function smart_close()
   end
 end
 
-vim.keymap.set("n", "<leader>q", smart_close, { silent = true })
+vim.keymap.set("n", config.bufferline.close_tab, smart_close, { silent = true })
 

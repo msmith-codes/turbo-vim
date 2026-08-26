@@ -1,6 +1,6 @@
 return {
     theme = {
-        style = "gruvbox",
+        style = "catppuccin",
         mode = "dark",
     },
     editor = {
@@ -9,15 +9,25 @@ return {
         highlight_line = true,
         tab_size = 4,
     },
-    neotree = {
-        position = "current",
-    },
     filetree = {
         jump_to = "<C-h>",
         toggle = "<C-n>",
+        position = "left",
+        fullscreen = false,
+        width = 24,
+    },
+    sidekick = {
+        enabled = true,
     },
     telescope = {
         findfile = "<leader>ff",
         livegrep = "<leader>fg",
+    },
+    terminal = {
+        toggle = "<C-\\>",
+        floating = true,
+    },
+    bufferline = {
+        close_tab = "<leader>q"
     },
 }

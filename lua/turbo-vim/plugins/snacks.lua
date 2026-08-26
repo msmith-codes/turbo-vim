@@ -1,3 +1,5 @@
+local config = require("config")
+
 return {
   "folke/snacks.nvim",
   priority = 1000,
@@ -16,10 +18,17 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
-          auto_close = true,
-          layout = {
+          auto_close = config.filetree.fullscreen,
+          layout = config.filetree.fullscreen and {
             preset = "default",
             fullscreen = true,
+          } or {
+            preset = "sidebar",
+            layout = {
+              position = config.filetree.position,
+              width = config.filetree.width,
+              min_width = config.filetree.width,
+            },
           },
         },
       },
@@ -33,6 +42,7 @@ return {
     terminal = {
       enabled = true,
       win = {
+        position = config.terminal.floating and "float" or "bottom",
         keys = {
           nav_close = "<C-\\>",
         },
@@ -40,8 +50,20 @@ return {
     },
   },
   keys = {
-    { "<C-\\>", function() Snacks.terminal() end, desc = "Toggle Terminal" },
-    { "<C-\\>", function() Snacks.terminal() end, mode = "t", desc = "Toggle Terminal" },
-    { "<leader>t", function() Snacks.explorer() end, desc = "Toggle Explorer" },
+    { config.terminal.toggle, function() Snacks.terminal() end, desc = "Toggle Terminal" },
+    { config.terminal.toggle, function() Snacks.terminal() end, mode = "t", desc = "Toggle Terminal" },
+    { config.filetree.toggle, function() Snacks.explorer() end, desc = "Toggle Explorer" },
+    {
+      config.filetree.jump_to,
+      function()
+        local explorer = Snacks.picker.get({ source = "explorer" })[1]
+        if explorer then
+          explorer:focus()
+        else
+          Snacks.explorer()
+        end
+      end,
+      desc = "Jump to Explorer",
+    },
   },
 }

@@ -1,3 +1,5 @@
+local config = require("config")
+
 return {
   "folke/sidekick.nvim",
   opts = {
@@ -6,6 +8,13 @@ return {
       mux = {
         backend = "tmux",
         enabled = false,
+      },
+      win = {
+        layout = "float",
+        float = {
+          width = 0.9,
+          height = 0.9,
+        },
       },
     },
   },
@@ -27,7 +36,12 @@ return {
     },
     {
       "<leader>aa",
-      function() require("sidekick.cli").toggle() end,
+      function()
+        if not config.sidekick.enabled then
+          return
+        end
+        require("sidekick.cli").toggle()
+      end,
       desc = "Sidekick Toggle CLI",
     },
     {
