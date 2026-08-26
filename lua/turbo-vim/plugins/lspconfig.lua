@@ -16,7 +16,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            vim.lsp.enabled('cmake')
+            vim.lsp.enable('cmake')
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
