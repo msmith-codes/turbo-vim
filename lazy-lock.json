@@ -19,5 +19,5 @@
   "sidekick.nvim": { "branch": "main", "commit": "208e1c5b8170c01fd1d07df0139322a76479b235" },
   "snacks.nvim": { "branch": "main", "commit": "882c996cf28183f4d63640de0b4c02ec886d01f2" },
   "telescope.nvim": { "branch": "master", "commit": "3333a52ff548ba0a68af6d8da1e54f9cd96e9179" },
-  "witness.nvim": { "branch": "main", "commit": "7f5424aa75e1069902430c6f38d6ee38faeccca9" }
+  "witness.nvim": { "branch": "main", "commit": "c4a06fcb41e36f14adc972c54a0f25e12c352c9a" }
 }
