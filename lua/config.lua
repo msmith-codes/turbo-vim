@@ -8,11 +8,12 @@ return {
         relative_line_numbers = false,
         highlight_line = true,
         tab_size = 4,
+        leader = " ",
     },
     filetree = {
         jump_to = "<C-h>",
         toggle = "<C-n>",
-        position = "left", -- [left right]
+        position = "left", -- [left, right]
         fullscreen = false,
         width = 24,
     },

@@ -1,6 +1,6 @@
 local config = require("config")
 
-vim.g.mapleader = " "
+vim.g.mapleader = config.editor.leader
 vim.g.maplocalleader = "\\"
 
 vim.opt.number = config.editor.line_numbers 
