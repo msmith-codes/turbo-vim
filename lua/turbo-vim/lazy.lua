@@ -26,6 +26,7 @@ local plugins = {
     require("turbo-vim.plugins.telescope"),
     require("turbo-vim.plugins.snacks"),
     require("turbo-vim.plugins.sidekick"),
+    require("turbo-vim.plugins.witness")
 }
 local opts = {}
 
