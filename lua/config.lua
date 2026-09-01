@@ -9,13 +9,14 @@ return {
         highlight_line = true,
         tab_size = 4,
         leader = " ",
+        show_error = "<leader>e",
     },
     filetree = {
         jump_to = "<C-h>",
         toggle = "<C-n>",
         position = "left", -- [left, right]
         fullscreen = false,
-        width = 24,
+        width = 32,
     },
     sidekick = {
         enabled = true,

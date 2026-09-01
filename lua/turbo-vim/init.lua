@@ -12,4 +12,8 @@ vim.opt.tabstop = config.editor.tab_size
 vim.opt.softtabstop = config.editor.tab_size
 vim.opt.expandtab = true
 
+vim.keymap.set("n", config.editor.show_error, function()
+  vim.notify("This is an error message", vim.log.levels.ERROR)
+end, { silent = true, desc = "Show error message" })
+
 require("turbo-vim.lazy")
