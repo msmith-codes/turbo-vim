@@ -1,6 +1,6 @@
 return {
     theme = {
-        style = "catppuccin", -- [catppuccin, gruvbox]
+        style = "gruvbox", -- [catppuccin, gruvbox]
         mode = "dark", -- [dark, light]
     },
     editor = {
