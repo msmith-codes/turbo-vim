@@ -6,6 +6,7 @@ vim.g.maplocalleader = "\\"
 vim.opt.number = config.editor.line_numbers 
 vim.opt.relativenumber = config.editor.relative_line_numbers 
 vim.o.cursorline = config.editor.highlight_line
+vim.o.shell = config.terminal.shell
 
 vim.opt.shiftwidth = config.editor.tab_size 
 vim.opt.tabstop = config.editor.tab_size
