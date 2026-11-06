@@ -24,6 +24,7 @@ return {
     telescope = {
         findfile = "<leader>ff",
         livegrep = "<leader>fg",
+        shell = "bash",
     },
     terminal = {
         toggle = "<C-\\>",

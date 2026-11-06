@@ -41,6 +41,7 @@ return {
     words = { enabled = true },
     terminal = {
       enabled = true,
+      shell = config.terminal.shell,
       win = {
         position = config.terminal.floating and "float" or "bottom",
         keys = {
